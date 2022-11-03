@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+      :root {
+        --clr-dark:rgb(31 41 35);
+        --clr-grey:rgb(107 114 128);
+      }
+      body{
+        font-family: 'Poppins', sans-serif;
+        background-color: azure;
+      }
+      .navbar-brand {
+        font-family: 'Nunito', sans-serif;
+        color:var(--clr-dark) !important;
+      }
+      
+      .nav-link {
+        font-weight: 500;
+        font-size: 0,875rem;
+      }
+      .nav-link.active,
+      .navbar-brand {
+        color: var(--clr-dark) !important;
+      }
+
+      .main-header {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: var(--clr-dark);
+
+      }
+      @media (min-width: 576px) {
+        .main-header {
+          font-size: 4rem;
+        }
+      }
+
+      .my-foto {
+        object-fit: cover;
+        width: 100%;
+        border-radius: 1rem;
+      }
+
+      .section-header {
+        font-weight: bold;
+        color: var(--clr-dark);
+      }
+
+      .card {
+        border: none;
+        box-shadow: 0 1rem 3rem rgba(145, 145, 145, 0.175) !important;
+      }
+
+      .section {
+        scroll-margin-top: 4rem;
+      }
+
+      .footer-icons {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #495057;
+    color: #fff;
+    border-radius: 100%;
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#"><span style="color:blue">Fikri</span><span style="color:red;">Art</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-nav ms-auto">
+              <a class="nav-link active fw-bold" href="#about">Profil</a>
+              <a class="nav-link fw-bold" href="#karya">Karya</a>
+              <a class="nav-link fw-bold" href="#galeri">Galeri</a>
+              <a class="nav-link fw-bold" href="#alamat">Alamat</a>
+              <a class="nav-link fw-bold" href="#kontak">Kontak</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+      <!-- Tentang -->
+      <section class="min-vh-100 d-flex align-items-center py-lg-0 py-5" id="about">
+        <div class="container">
+          <div class="row align-items-center g-5 g-lg-0">
+            <div class="col-lg-7 order-lg-7 order-2" data-aos="fade-right" data-aos-duration="2000">
+              <h1 class="main-header">
+                Selamat Datang! Saya
+                <br>
+                <span class="text-primary">Muhammad Fikriansyah</span>
+              </h1>
+              <p class="my-4 text-content">
+                Saya seorang mahasiswa UNIVERSITAS SURYAKANCANA Fakultas Teknik Informatika, saya mempunyai keahlian di bidang desain terutama membuat desain tampilan aplikasi atau UI/UX Designer. Untuk bekerja sama atau mengenal lebih jauh tentang saya bisa langsung klik tombol "Hubungi Saya" di bawah ini.
+              </p>
+              <a class="btn btn-primary btn-lg shadow-lg" href="#kontak">Hubungi Saya</a>
+            </div>
+            <div class="col-lg-5 order-lg-2 order-1" data-aos="fade-left" data-aos-duration="2000">
+              <img class="my-foto" height="480" src="asset/fikri.jpg" alt="Portofolio">
+            </div>
+          </div> 
+
+        </div>
+      </section>
+
+      <!-- Karya -->
+      <section class="my-5 " id="karya">
+        <div class="container">
+          <p class="text-center mb-4 text-content">
+            - - - - - - -
+          </p>
+          <h2 class="section-header text-center">Karya</h2>
+          <p class="text-center mb-4 text-content">
+            - Buat dengan Hati,Membangun dengan pikiran -
+          </p>
+          <div class="row gy-4" >
+            <div class=" col-lg-4 col col-sm-6 col-12" data-aos="zoom-in-right" data-aos-duration="2000">
+              <div class="card h-100">
+                <div class="ratio ratio-16x9">
+                  <img src="asset/Desain.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Desain Custom</h5>
+                </div>
+                <div class="card-footer bg-white">
+                  <a href="#" class="btn btn-primary">Detail</a>
+                </div>
+              </div>
+            </div>
+            <div class=" col-lg-4 col col-sm-6 col-12" data-aos="flip-up" data-aos-duration="2000">
+              <div class="card h-100">
+                <div class="ratio ratio-16x9">
+                  <img src="asset/karikatur.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Karikatur</h5>
+                </div>
+                <div class="card-footer bg-white">
+                  <a href="#" class="btn btn-primary">Detail</a>
+                </div>
+              </div>
+            </div>
+            <div class=" col-lg-4 col col-sm-6 col-12" data-aos="zoom-in-left" data-aos-duration="2000">
+              <div class="card h-100">
+                <div class="ratio ratio-16x9">
+                  <img src="asset/smudge.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Smudge</h5>
+                </div>
+                <div class="card-footer bg-white">
+                  <a href="#" class="btn btn-primary">Detail</a>
+                </div>
+              </div>
+            </div>
+            <div class=" col-lg-4 col col-sm-6 col-12" data-aos="flip-up" data-aos-duration="2000">
+              <div class="card h-100">
+                <div class="ratio ratio-16x9">
+                  <img src="asset/vektor.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Vektor</h5>
+                </div>
+                <div class="card-footer bg-white">
+                  <a href="#" class="btn btn-primary">Detail</a>
+                </div>
+              </div>
+            </div>
+            <div class=" col-lg-4 col col-sm-6 col-12" data-aos="flip-up" data-aos-duration="2000">
+              <div class="card h-100">
+                <div class="ratio ratio-16x9">
+                  <img src="asset/editfoto.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Edit Foto</h5>
+                </div>
+                <div class="card-footer bg-white">
+                  <a href="#" class="btn btn-primary">Detail</a>
+                </div>
+              </div>
+            </div>
+            <div class=" col-lg-4 col col-sm-6 col-12" data-aos="flip-up" data-aos-duration="2000">
+              <div class="card h-100">
+                <div class="ratio ratio-16x9">
+                  <img src="asset/editvidio.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Edit Vidio</h5>
+                </div>
+                <div class="card-footer bg-white">
+                  <a href="#" class="btn btn-primary">Detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Galeri -->
+      <section class="my-5" id="galeri">
+        <div class="container">
+          <p class="text-center mb-4 text-content">
+            - - - - - - -
+          </p>
+          <h2 class="section-header text-center">Galeri</h2>
+          <p class="text-center mb-4 text-content">
+            - - - - - - - - - - - - - - - - - - - - - - - - -
+          </p>
+          <div class="row">
+            <div class="col mx-auto" data-aos="fade-down" data-aos-duration="2000">
+              <div class="ratio ratio-1x1"><img src="asset/fikri.jpg" alt=""></div>
+            </div>
+            <div class="col mx-auto" data-aos="fade-up" data-aos-duration="2000">
+              <div class="ratio ratio-1x1"><img src="asset/fikri2.jpg" alt=""></div>
+            </div>
+            <div class="col mx-auto" data-aos="fade-down" data-aos-duration="2000">
+              <div class="ratio ratio-1x1"><img src="asset/fikri3.jpg" alt=""></div>
+            </div>
+            <div class="col mx-auto" data-aos="fade-up" data-aos-duration="2000">
+              <div class="ratio ratio-1x1"><img src="asset/fikri5.jpg" alt=""></div>
+            </div>
+            <div class="col mx-auto" data-aos="fade-down" data-aos-duration="2000">
+              <div class="ratio ratio-1x1"><img src="asset/fikri6.jpg" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Alamat -->
+      <section class="my-5" id="alamat">
+        <div class="container">
+          <p class="text-center mb-4 text-content">
+            - - - - - - -
+          </p>
+          <h2 class="section-header text-center">Alamat</h2>
+          <p class="text-center mb-4 text-content">
+            - - - - - - - - - - - - - - - - - - - - - - - - -
+          </p>
+          <div class="row" data-aos="zoom-in" data-aos-duration="2000">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.60538776693002!2d107.2772418794914!3d-6.8079723673310815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd5020779c2088e67!2sRumah%20Muhammad%20Fikriansyah!5e0!3m2!1sid!2sid!4v1667111093372!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- Kontak -->      
+      <section class="my-5" id="kontak">
+        <div class="container">
+          <p class="text-center mb-4 text-content">
+            - - - - - - -
+          </p>
+          <h2 class="section-header text-center">Kontak</h2>
+          <p class="text-center mb-4 text-content">
+            - Kirimkan pesan anda lewat email di bawah ini -
+          </p>
+          <div class="row">
+            <div class="">
+              <form action="" class=""data-aos="fade-down" data-aos-duration="2000">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="mb-3" >
+                      <label for="nama" class="form-label fw-bold">Nama:</label>
+                      <input type="text" class="form-control" id="nama" autocomplete="off">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="mb-3" >
+                      <label for="email" class="form-label fw-bold">Email:</label>
+                      <input type="email" class="form-control" id="email" autocomplete="off">
+                    </div>
+                  </div>
+                  <div class="mb-3" >
+                    <label for="message" class="form-label fw-bold">Message:</label>
+                    <textarea class="form-control" id="message" autocomplete="off" rows="6"></textarea>
+                  </div>
+                </div>
+                <button class="btn btn-primary">Kirim</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<footer class="d-flex flex-wrap justify-content-between py-3 border-top">
+        <div class="col-md-8 d-flex">
+            <span class="footer-text ps-4">&copy; MuhammadFikriansyah @2022 </span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="me-3"><a class="footer-icons" href="https://github.com/mfikriansyah"><i class="fab fa-github"></i></a></li>
+            <li class="me-3"><a class="footer-icons" href="https://www.instagram.com/fkransyahh_/?hl=id"><i class="fab fa-instagram"></i></a></li>
+            <li class="me-3"><a class="footer-icons" href="https://www.facebook.com/muhammadfikriansyah27"><i class="fab fa-facebook-f"></i></a></li>
+        </ul>
+</footer>
+
+      <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      
+      <script>
+          let navbar = document.getElementById('navbar-custom');
+  
+          window.addEventListener('scroll', function(){
+              let scroll = window.scrollY;
+  
+              if (scroll > 50) {
+                  navbar.classList.remove('navbar-dark');
+                  navbar.classList.add('bg-light');
+              } else {
+                  navbar.classList.add('navbar-dark');
+                  navbar.classList.remove('bg-light');
+              }
+          })
+      </script>
+        <script>
+          AOS.init();
+        </script>
+</body>
+</html>
